@@ -20,14 +20,24 @@ public class Fisica extends Pessoa {
     }
 
     @Override
+    public String toString() {
+        return id + " - " + nome + " - " + cpf ; //To change body of generated methods, choose Tools | Templates.
+    }
+
+    
+    
+    
+
+    @Override
     public void cadastrar() {
-        super.cadastrar(); 
+//      super.cadastrar(); 
         String texto = "Nome: " + this.nome + "\n" +
                 "Telefone: " + this.getTelefone() + "\n" +
                 "CPF: " + this.cpf;
         JOptionPane.showMessageDialog(null, texto );
-    
     }
+
+    
     
     
     
